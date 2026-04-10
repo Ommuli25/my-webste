@@ -1,0 +1,278 @@
+
+
+<style> * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    padding-top: 80px;   
+}
+
+/* Header */
+header {
+    background: #0a3d62;
+    color: white;
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* NEW: group right side */
+}/* Logo */
+header h1 {
+    font-size: 22px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Search bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.search-container input {
+    width: 140px; /* smaller so it fits */
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #f1f2f6;          /* brighter white */
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #ff793f;
+    color: white;
+}
+
+nav a:active {
+    background: #ff5722;
+}
+
+#contact {
+    padding: 80px 20px;
+}
+
+#contact p {
+    margin: 10px 0;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    margin-bottom: 30px;
+}
+
+.search-bar input,
+.search-bar select {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Search Container */
+
+.search-container button {
+    padding: 8px 12px;
+    border: none;
+    background: #ff793f;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ff5722;
+}
+
+/* Hero */
+.hero {
+    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #ff793f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #ff5722;
+}
+
+/* Top Search Bar */
+header input {
+    border-radius: 5px;
+    border: none;
+    margin-left: 20px;
+}
+
+/* Filters inside Hotel Section */
+.search-bar select {
+    padding: 10px;
+    margin: 8px;
+    width: 200px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Sections */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    color: #0a3d62;
+}
+
+.light {
+    background-color: #ffffff;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Places */
+.places {
+    list-style: none;
+    font-size: 18px;
+}
+
+.places li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.card img {
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+/* Offers Section */
+.offers {
+    background: linear-gradient(135deg, #0a3d62, #1e90ff);
+    color: white;
+}
+
+.offer-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.discount {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffdd59;
+}
+
+.badge {
+    display: inline-block;
+    background: #ff4757;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.offer-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #ffdd59;
+    color: #0a3d62;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.offer-btn:hover {
+    background: #ffc048;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+s
+</style>
+
+
