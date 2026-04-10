@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travellure | Travel With Comfort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>Travellure</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search hotels...">
+            <button id="searchBtn">🔍</button>
+        </div>
+        <nav>
+            <a href="#plans">Plans</a>
+            <a href="#hotels">Hotels</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a> 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Explore the World with Travellure</h2>
+        <p>Book Flights, Trains, Buses & Hotels – All in One Place</p>
+        <button>Start Your Journey</button>
+    </section>
+
+    <!-- Travel Plans -->
+    <section id="plans" class="section">
+        <h2>Our Travel Plans</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://www.flextrades.com/wp-content/uploads/2024/03/Ultimate-Guide-to-Budget-Friendly-Travel-Tips-Tricks-from-FlexTrades-1024x707.jpg" alt="Budget friendly trip" width="128" height="128">
+                <h3>Budget Trip</h3>
+                <p>Affordable travel with comfortable stay.</p>
+                <p>Price: ₹3000</p>
+                <button class="add-to-cart" data-name="Budget Trip" data-price="3000">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://www.travelandleisure.com/thmb/z4pryL9Ji2yL2GdZImjMEbA9HdQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/201402-w-best-mexico-beach-resorts-las-ventanas-al-paralso-2000-1c607de88ede48d1b23f3531d6c5a3ec.jpg" alt="Luxury Trip" width="128" height="128">
+                <h3>Luxury Trip</h3>
+                <p>Premium hotels, flights & guided tours.</p>
+                <p>Price: ₹20000</p>
+                <button class="add-to-cart" data-name="Luxury Trip" data-price="20000">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://www.thedailymeal.com/img/gallery/50-affordable-family-friendly-summer-trips-gallery/happy-family-with-two-kids-hands-up-on-beach-picture-id677652068_0.jpg" alt="Family trip" width="128" height="128">
+                <h3>Family Package</h3>
+                <p>Perfect trips for family vacations.</p>
+                <p>Price: ₹10000</p>
+                <button class="add-to-cart" data-name="Family Package" data-price="10000">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section light">
+        <h2>Book Your Travel</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://ae.deiratravel.com/wp-content/uploads/2024/11/tickets.jpg" width="128" height="128">
+                <h3>✈️ Flight Booking</h3>
+                <p>Domestic & International flights</p>
+            </div>
+
+            <div class="card">
+                <img src="https://imgk.timesnownews.com/story/4701080614862848.jpg" width="128" height="128">
+                <h3>🚆 Train Booking</h3>
+                <p>Fast & affordable rail travel</p>
+            </div>
+
+            <div class="card">
+                <img src="https://image.shutterstock.com/z/stock-vector-mobile-application-for-buying-tickets-online-male-user-booking-bus-tickets-digital-bus-passenger-2026089548.jpg" width="128" height="128">
+                <h3>🚌 Bus Booking</h3>
+                <p>Comfortable bus journeys</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Booking Section -->
+    <section id="hotels" class="section">
+        <h2>Hotel Booking</h2>
+        <div class="search-bar">
+            <select id="priceFilter">
+                <option value="all">All Prices</option>
+                <option value="low">Below ₹3000</option>
+                <option value="mid">₹3000 - ₹6000</option>
+                <option value="high">Above ₹6000</option>
+            </select>
+            <select id="ratingFilter">
+                <option value="all">All Ratings</option>
+                <option value="3">3★ & above</option>
+                <option value="4">4★ & above</option>
+                <option value="5">5★ only</option>
+            </select>
+        </div>
+        <div class="cards" id="hotelContainer"></div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="section offers">
+        <h2>🔥 Special Winter Offers</h2>
+        <p>Make your winter vacations unforgettable with Travellure</p>
+
+        <div class="cards">
+            <div class="offer-card">
+                <div class="badge">LIMITED TIME</div>
+                <h3>First Trip Special</h3>
+                <p class="discount">20% OFF</p>
+                <p>On your first travel plan</p>
+                <button class="offer-btn">Book Now</button>
+            </div>
+
+            <div class="offer-card">
+                <div class="badge">WINTER DEAL</div>
+                <h3>Winter Wonderland</h3>
+                <p>Snow destinations, hill stations & cozy stays</p>
+                <p class="discount">Save Big</p>
+                <button class="offer-btn">Explore Deals</button>
+            </div>
+
+            <div class="offer-card">
+                <div class="badge">HOT DEAL</div>
+                <h3>Flight + Hotel Combo</h3>
+                <p>Best prices for winter travel</p>
+                <p class="discount">Up to 25% OFF</p>
+                <button class="offer-btn">Grab Offer</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nearby Places Section -->
+    <section id="places" class="section light">
+        <h2>Nearby Places to Visit</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.Mr9B3Wxmtljg5NEuKEB_WwHaE5" width="128" height="128">
+                <h3>🏖️ Sunny Beach</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/beautiful-sunset-view-from-hilltop-begnas-lake-joseph-mathew.jpg" width="128" height="128">
+                <h3>🏔️ Hilltop View Point</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://images.indianexpress.com/2018/12/ajanta-1.jpg" width="128" height="128">
+                <h3>🏰 Historic Old Fort</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://wallpapercave.com/wp/wp7763384.jpg" width="128" height="128">
+                <h3>🌄 Nature Valley</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Travellure</h2>
+        <p>Email: support@travellure.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Travellure. Travel Smart, Travel Happy.</p>
+    </footer>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
+
